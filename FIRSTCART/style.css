@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=League+Spartan:wght@100;200;300;400&family=Nerko+One&display=swap');
+
+
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box; outline: none;
+    border: none; text-decoration: none;  
+    list-style: none;
+   
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+  }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    /* box-shadow: 0 3px 7px rgba(0, 0, 10, 0.3); */
+    background-color: #000;
+    position: fixed;
+    top:0; left: 0; right:0; 
+    z-index: 1;
+    /* transition: top 0.3s; */
+    
+}
+header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color:#fff;
+}
+
+nav a{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    color: #fff;
+   
+}
+nav a:hover{
+  color: #f68b1e;
+}
+.fa{
+  font-size: 2.3rem;
+  color: #000;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.cart{
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1px 3px;
+  position: relative;
+}
+.cartAmount{
+  background-color: crimson;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  right: -10px;
+  top: -11px;
+  padding: 4px;
+  border-radius: 3px;
+}
+.fa-times{
+  display: none;
+  color: rgb(87, 83, 83);
+  font-size: 3rem;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+#menubar{
+  display: none;
+  color: rgb(87, 83, 83); 
+  font-size: 4rem; 
+  cursor: pointer;
+  padding: .3rem .7rem;
+}
+
+.products-section{
+    padding: 7% 10%;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 4%;
+  /* display: grid;
+  grid-template-columns: repeat(4, 240px); */
+}
+
+.item{
+  flex: 1 1 20rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  /* border-top: 1px solid #808080; */
+}
+/* .item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+.item .item-img{
+  height:200px;
+  width:100%;
+  /* object-fit:contain; */
+}
+.item-img img{
+  width: 100%;
+  /* border-radius: 2px 2px 0 0; */
+  
+}
+
+.item-details{
+  padding: 15px 20px 20px 18px;
+  /* padding: 20px; */
+}
+.item-details h3{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.item-details p{
+  color: hsl(233, 8%, 62%);
+  font-size: 1.2rem;
+  line-height: 20px;
+  
+}
+.price-quantity{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.price-quantity h2{
+  font-size: 2rem;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid hsl(233, 8%, 62%);
+  padding: 8px 10px; */
+}
+.fa-plus, .fa-minus{
+  color: hsl(233, 8%, 62%);
+  font-size: .8rem;
+}
+.quantity{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2rem ;
+}
+
+/* CART JS STYLE SECTION */
+.text-center{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+.HomeBtn, 
+.checkout, 
+.removeAll{
+  background-color: #212529;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout{
+  background-color: green;
+}
+.removeAll{
+  background-color: crimson;
+}
+
+.fa-xmark{
+  color: crimson;
+  font-size: 16px;
+  font-weight:bold;
+  margin-top: 3px;
+  margin-right: 12px;
+}
+.shopping-cart{
+  display: grid;
+  grid-template-columns: repeat(1,320px);
+  justify-content: center;
+ 
+}
+.cart-item{
+  /* text-align: center; */
+  border: 1px solid #808080;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom:10px ;
+}
+.title-price-x{
+  width: 195px;
+  display: flex;
+  justify-content: space-between;
+}
+.title-price{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-item-price{
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+@media (max-width:1200px) {
+  .products-section{
+    padding: 14% 10%;
+}
+}
+
+@media (max-width:768px) {
+  .products-section{
+    padding: 20% 10%;
+}
+}
+
+@media (max-width:650px) {
+  .products-section{
+    padding: 20% 20%;
+}
+}

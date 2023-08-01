@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/2.png">
+    <title>FIRSTCART</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <header>
+       <a href="index.html"><h4 class="logo">FirstCart</h4></a> 
+    
+        <nav class="navbar" id="navbar">
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+            <a href="#home" >Home</a>
+            <a href="#product">Products</a>
+            <a href="#about">About</a>
+        
+        </nav>
+
+        <!-- <div> -->
+            <a href="cart.html">
+                <div class="cart">
+                    <i class="fa fa-cart-plus"></i>
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+            </a>
+        <!-- </div> -->
+        
+
+        <div id="menubar">  
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+</section>
+     
+
+    <section class="products-section" id="products-section">
+        <div class="products" id="products">
+
+            <!-- <div class="item" id="item">
+                <img src="images/f1.jpg" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Denim Shirt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, illum.</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div> -->
+
+            <!-- <div class="item" id="item">
+                <img src="images/product2.jpg" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Oraimo Airpod</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, perferendis!</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="item" id="item">
+                <img src="images/shoe3.png" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Nike orange Sneakers</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam.</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="item" id="item">
+                <img src="images/n7.jpg" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Kaki Shirt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sapiente.</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="item" id="item">
+                <img src="images/f6.jpg" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Denim Shirt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, illum.</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="item" id="item">
+                <img src="images/shoe3a.png" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Nike Air Max</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, illum.</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="item" id="item">
+                <img src="images/product5.jpg" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Sunglasses</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, illum.</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="item" id="item">
+                <img src="images/product6.jpg" alt="" class="item-img">
+                <div class="item-details">
+                    <h3>Baseball Cap</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, illum.</p>
+                    <div class="price-quantity">
+                        <h2>$ 45</h2>
+                        <div class="buttons">
+                            <i class="fa-solid fa-minus"></i>
+                            <div class="quantity">0</div>
+                            <i class="fa-solid fa-plus"></i> 
+                        </div>
+                    </div>
+                </div> 
+            </div> -->
+
+            
+
+
+        </div>
+    </section>
+
+    <!-- <script src="product.js"></script> -->
+    <script src="productdata.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

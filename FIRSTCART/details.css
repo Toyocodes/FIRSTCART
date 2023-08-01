@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=League+Spartan:wght@100;200;300;400&family=Nerko+One&display=swap');
+
+
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box; outline: none;
+    border: none; text-decoration: none;  
+    transition: all .2s linear; list-style: none;
+   
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+  }
+body{
+    background-color: #f7f7f7;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 8%;
+    box-shadow: 0 3px 7px rgba(0, 0, 10, 0.3);
+    background-color: #f7f7f7;
+    position: fixed;
+    top:0; left: 0; right:0; 
+    z-index: 1;
+    /* transition: top 0.3s; */
+    
+}
+header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color:rgb(87, 83, 83);
+}
+
+nav a{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    color: rgb(87, 83, 83);
+   
+}
+nav a:hover{
+  color: #f68b1e;
+}
+.fa{
+  font-size: 2rem;
+  color: #808080;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.fa-times{
+  display: none;
+  color: rgb(87, 83, 83);
+  font-size: 3rem;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+#menubar{
+  display: none;
+  color: rgb(87, 83, 83); 
+  font-size: 4rem; 
+  cursor: pointer;
+  padding: .3rem .7rem;
+}
+#user-img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: -6px;
+    margin-left: 20px;
+}
+#user-img:hover{
+    border: 4px solid #f68b1e;
+    border-radius: 50%;
+}
+.cart-section{
+    padding: 6% 8%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+    gap: 7rem;
+    
+}
+.col-1{
+    flex: 1 1 30rem;
+
+}
+.col-1 img{
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+}
+
+.col-1 h2{
+    color: #f68b1e;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+.col-1 h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.col-1 p{
+    font-size: 1.5rem;
+    color: #808080;
+    margin-bottom: 20px;
+    max-width: 440px;
+}
+.col-1 h4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+span{
+    color: #f68b1e;
+    padding: 3px;
+    background-color: hsl(25, 100%, 94%);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.col-1 h5{
+   color: #808080;
+   font-weight: lighter;
+   font-size: 1.1rem;
+   text-decoration: line-through;
+}
+select{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: .8rem 1rem .8rem 1rem;
+}
+input{
+    width: 10%;
+    padding: .9rem;
+}
+.product-cart{
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    padding: .8rem 5rem .8rem 5rem;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 1.3rem;
+   
+}
+.fa-cart-shopping{
+    margin-right: 10px;
+    font-size: 1.3;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 20px;
+    
+}
+.small-img-col{
+    /* flex-basis: 24%; */
+    cursor: pointer;
+ 
+}
+.small-img-col img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+@media (max-width:1100px) {
+    .row{
+        margin-top: 9%;
+    }
+}
+@media (max-width:768px) {
+    /* .row{
+        flex-direction: column;
+    } */
+    nav{
+        display: none;
+    }
+    .row{
+        margin-top: 11%;
+    }
+}
+
+@media (max-width:900px) {
+    .row{
+        flex-direction: column;
+    }
+}
+/* @media (max-width:400px) {
+   
+    .small-img-row{
+       margin: 100px 100px;
+    }
+} */
+
+
+
+
+
+
+
+

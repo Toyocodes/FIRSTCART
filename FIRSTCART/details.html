@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/2.png">
+    <title>ORANGE CART</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+<section>
+    <header>
+        <h4 class="logo">Vintage</h4>
+    
+        <nav class="navbar" id="navbar">
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+            <a href="#home" >Collections</a>
+            <a href="#specials">Men</a>
+            <a href="#popular">Women</a>
+            <a href="#pastery">About</a>
+            <a href="#drinks">Contact</a> 
+        </nav>
+        <div>
+           <!-- <a href=""></a> -->
+            <!-- <a href="login.html"><i class="fa fa-user" id="user-icon"></i></a> -->
+            <i class="fa fa-cart-plus" id="cart-icon" onclick="addToCart()"></i>
+            <a href=""><img src="images/2.png" alt="" id="user-img"></a>
+        </div>
+
+        <div id="menubar">  
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+</section>
+     <!-- ### Primary
+
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+
+- Very dark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%) -->
+     
+    <!-- header section ends-->
+
+    <section class="cart-section" id="cart-section">
+        <div class="row">
+            <div class="col-1">
+                <img src="images/f1.jpg" alt="" id="product-img">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/f1.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/f2.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/f3.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/f4.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h2>SNEAKER COMPANY</h2>
+                <h1>Fall Limited Edition Vintage</h1>
+                <p>These low-profile vintage are your perfect casual wear companion. Featuring a 
+                    durable cotton material, they’ll make your stand out especially during summer at the beach.</p>
+                <h4>$125.00 <span>50%</span> </h4>
+                <h5>$250.00</h5>
+                <select name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">XXL</option>
+                    <option value="">XL</option>
+                    <option value="">Large</option>
+                    <option value="">Medium</option>
+                    <option value="">Small</option>
+                </select>
+                <!-- <div class="buttons">
+                    <span class="minus">-</span>
+                    <span class="num">1</span>
+                    <span class="plus">+</span>
+                  </div> -->
+                <div>
+                    <input type="number" value="1">
+                    <a href="" class="product-cart"><i class="fa-solid fa-cart-shopping"></i>Add To Cart</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="details.js"></script>
+</body>
+</html>
